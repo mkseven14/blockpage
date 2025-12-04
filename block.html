@@ -222,7 +222,7 @@
                 sourceIp: params.get('cf_source_ip') || (isDemo ? '10.20.1.45' : ''),
                 ruleId: params.get('cf_rule_id'),
                 filterType: params.get('cf_filter'),
-                appName: params.get('cf_application_name') || params.get('cf_app_name'), // Check both common variants
+                appName: params.get('cf_application_names') || params.get('cf_app_name'), // Check both common variants
                 timestamp: new Date().toLocaleString('en-US', { 
                     weekday: 'short', 
                     year: 'numeric', 
