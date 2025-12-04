@@ -208,7 +208,7 @@
             // Policy can be the Rule ID or a readable name
             const policyId = getQueryParam('cf_rule_id') || 'Policy=student-access';
             const sourceIp = getQueryParam('cf_source_ip') || '127.0.0.1';
-            const appName = getQueryParam('cf_application_name'); // This triggers the mode change
+            const appName = getQueryParam('cf_application_names'); // This triggers the mode change
 
             // -- Logic: Determine Mode (App Defender vs Standard) --
             const headerEl = document.getElementById('block_header');
